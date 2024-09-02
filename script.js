@@ -5,6 +5,11 @@ const result = document.getElementById("result")
 
 // function to check palindrome
 function checkPal(e){    
+    //make alert
+    if ( ! input.value ){
+        window.alert("Please input a value")
+        return
+    }    
     // remove '\W' and make all letters to lowercase. don't use "" for regex    
     const reg = /[a-z]|[0-9]/g    
     const arr = input.value.toLowerCase().match(reg);
